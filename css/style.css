@@ -1,0 +1,72 @@
+:root{
+    --white : #F2F2F2;
+    --beige : #f7e4ca;
+    --grey : #A6A6A6;
+    --darkgrey : #595959;
+    --black : #0D0D0D;
+    --blue : #002B5B;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: var(--white);
+    text-align: center;
+}
+
+h1{
+    font-family: 'DM Serif Display', serif;
+}
+h1, p{
+    color: var(--black);
+    background-color: #f7e4ca;
+    width: 60%;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+p{
+    color: var(--black);
+    font-family: 'Roboto Slab', serif;
+    size: 4em;
+    text-decoration: solid;
+}
+
+
+span{
+    text-transform: uppercase;
+    text-shadow: #fc9abe;
+    text-decoration: underline;
+    color: var(--grey);
+    
+}
+
+/* NAVBAR*/
+.navBoots{
+    background-color: #f7e4ca;
+    height: 10vh;
+}
+
+/* CARROUSEL*/
+#carouselExampleDark{
+    width: 50vw;
+    margin: 20px auto;
+    
+}
+
+/* CARDS*/
+
+.card{
+    margin: 15px;
+    background-color: #f7e4ca;
+}
+.card-group .card2 p{
+    box-shadow: none;
+}
+.card-group .card2 a{
+    background-color: var(--blue);
+}
+.card2{
+    width: 18rem; 
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
