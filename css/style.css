@@ -21,7 +21,7 @@ h1{
 h1, p{
     color: var(--black);
     background-color: #f7e4ca;
-    width: 60%;
+    width: 70%;
     margin: auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
@@ -53,15 +53,27 @@ span{
     margin: 20px auto;
     
 }
-
+#carouselExampleDark .carousel-inner .responsive_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 /* CARDS*/
 
 .card{
     margin: 15px;
     background-color: #f7e4ca;
 }
+.card-group{
+    width: 70%;
+    margin: auto;
+}
 .card-group .card2 p{
     box-shadow: none;
+}
+.card-group .card2 .card-img-top{
+    height: 100%;
+    object-fit: cover;
 }
 .card-group .card2 a{
     background-color: var(--blue);
@@ -69,4 +81,31 @@ span{
 .card2{
     width: 18rem; 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+/* NOSOTROS*/
+.nosotros p, .sectionSeguros .textoSeguros p{
+    font-size: 2rem;
+    border-radius: 20px;
+}
+.nosotros .contenedorImg{
+    width: 70%;
+    margin: auto ;
+    display: flex;
+    flex-wrap: wrap;
+}
+.nosotros .divResponsive{
+    width: 30%;
+    margin: 10px auto;
+}
+.nosotros .divResponsive .responsive_img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        flex-wrap: wrap;
+}
+/* TIPOS DE SEGUROS*/
+
+/* MEDIA CELULARES*/
+@media only screen and (max-width: 425px){
+	/*Small smartphones [325px -> 425px]*/
 }
