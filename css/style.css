@@ -14,16 +14,34 @@ body{
     background-color: var(--white);
     text-align: center;
 }
-
+.divResponsive{
+    width: 110%;
+    margin: 10px auto;
+}
+.responsive_img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-wrap: wrap;
+}
 h1{
     font-family: 'DM Serif Display', serif;
 }
 h1, p{
     color: var(--black);
-    background-color: #f7e4ca;
+    background-color: var(--beige);
     width: 70%;
     margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+h2{
+    width: 70%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 3rem;
 }
 p{
     color: var(--black);
@@ -42,10 +60,49 @@ span{
 }
 
 /* NAVBAR*/
+header{
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+    border: solid var(--grey) 1px;
+    font-size: 2rem;
+}
+#link{
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: var(--black);
+}
+#link:before, #link:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #e65454;
+    transform: scaleX(0);
+    transition: transform .25s;
+}
+#link::before{
+    top: -3px;
+    transform-origin: left;
+}
+#link::after{
+    bottom: -3px;
+    transform-origin: right;
+}
+#link:hover::before, #link:hover::after{
+    transform: scaleX(1);
+}
 .navBoots{
     background-color: #f7e4ca;
     height: 10vh;
 }
+nav .container-fluid .divResponsiveNav{
+    width: 80px;
+    margin:  auto;
+}
+
 
 /* CARROUSEL*/
 #carouselExampleDark{
@@ -81,6 +138,13 @@ span{
 .card2{
     width: 18rem; 
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+.aseguradora{
+    margin-top: 45px;
+}
+.card-group-aseguradora .card2Aseguradora{
+    margin: 30px auto 30px ;
+    
 }
 /* NOSOTROS*/
 .nosotros p, .sectionSeguros .textoSeguros p{
