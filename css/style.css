@@ -26,25 +26,25 @@ body{
 }
 h1{
     font-family: 'DM Serif Display', serif;
-}
-h1, p{
-    color: var(--black);
-    background-color: var(--beige);
-    width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-bottom: 2px solid var(--grey);
+    font-size: 4rem;
+    width: 50%;
+    margin: 30px auto 0px;
+    padding-bottom: 10px;
 }
 h2{
+    font-family: 'DM Serif Display', serif;
     width: 70%;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 85px auto 25px;
     font-size: 3rem;
 }
+
 p{
     color: var(--black);
+    margin:auto;
+    width: 70%;
+    background-color: var(--beige);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: 'Roboto Slab', serif;
     size: 4em;
     text-decoration: solid;
@@ -145,6 +145,21 @@ nav .container-fluid .divResponsiveNav{
 .card-group-aseguradora .card2Aseguradora{
     margin: 30px auto 30px ;
     
+}
+.button{
+    display: inline-block;
+    color: var(--beige);
+    text-decoration: none;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+}
+.button:hover{
+    animation: pulsate 1s ease-in-out;
+}
+@keyframes pulsate{
+    0%{
+        box-shadow: 0 0 20px var(--beige), 0 0 35px var(--blue);
+    }
 }
 /* NOSOTROS*/
 .nosotros p, .sectionSeguros .textoSeguros p{
