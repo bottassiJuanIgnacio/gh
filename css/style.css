@@ -15,7 +15,7 @@ body{
     text-align: center;
 }
 .divResponsive{
-    width: 110%;
+    width: 100%;
     margin: 10px auto;
 }
 .responsive_img{
@@ -46,8 +46,10 @@ p{
     background-color: var(--beige);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     font-family: 'Roboto Slab', serif;
-    size: 4em;
+    font-size: 1.3em;
+    text-align: -webkit-auto;
     text-decoration: solid;
+    padding: 5px;
 }
 
 
@@ -72,6 +74,7 @@ header{
     display: inline-block;
     text-decoration: none;
     color: var(--black);
+    margin: 10px;
 }
 #link:before, #link:after{
     content: '';
@@ -127,6 +130,7 @@ nav .container-fluid .divResponsiveNav{
 }
 .card-group .card2 p{
     box-shadow: none;
+    width: 100%;
 }
 .card-group .card2 .card-img-top{
     height: 100%;
@@ -146,12 +150,18 @@ nav .container-fluid .divResponsiveNav{
     margin: 30px auto 30px ;
     
 }
+.divResponsiveCards {
+    margin: auto;
+    width: 100%;
+    height: 30%;
+}
 .button{
     display: inline-block;
     color: var(--beige);
     text-decoration: none;
     border: 1px solid var(--blue);
     border-radius: 10px;
+    margin: 20px 0px 0px;
 }
 .button:hover{
     animation: pulsate 1s ease-in-out;
@@ -182,9 +192,111 @@ nav .container-fluid .divResponsiveNav{
         object-fit: cover;
         flex-wrap: wrap;
 }
+.nosotros .contenedorImg .contenedorImgHijo{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
 /* TIPOS DE SEGUROS*/
 
 /* MEDIA CELULARES*/
-@media only screen and (max-width: 425px){
-	/*Small smartphones [325px -> 425px]*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+	/* smartphones [320px -> 786px]*/
+    h1{
+        border-bottom: 3px solid var(--grey);
+        font-size: 3rem;
+        width: 80%;
+    }
+    h2{
+        font-size: 2.2rem;
+    }
+    .nosotros p, .sectionSeguros .textoSeguros p {
+        font-size: 1rem;
+    }
+    p {
+        padding: 5px;
+        width: 90%;
+    }
+    /* NOSOTROS*/
+    .nosotros .contenedorImg {
+        width: 90%;
+        flex-direction: column;
+    }
+    .nosotros .divResponsive {
+        width: auto;
+    }
+    .nosotros .contenedorImg .contenedorImgHijo{
+        display: none;
+    }
+    /* NAVBAR*/
+    .navbar-collapse {
+        background-color: var(--beige);
+        border: 1px solid var(--black);
+    }
+    .navbar-nav .dropdown-menu {
+        background-color: var(--beige);
+        font-style: italic;
+    }
+    /* CAROUSEL*/
+    #carouselExampleDark {
+        width: 100%;
+    }
+    /* CARDS*/
+    .card-group {
+        width: 100%;
+    }
+    .card2{
+        margin: 30px auto 20px;
+    }
+}
+
+/* MEDIA TABLETS*/
+@media screen and (min-width: 768px) and (max-width: 1223px){
+    /*Tablets [787px -> 1200px]*/
+    
+    /*NOSOTROS */
+    .nosotros .contenedorImg .contenedorImgHijo{
+        width: 100%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    /* NAVBAR*/
+    .navbar-collapse {
+        background-color: var(--beige);
+        border: 1px solid var(--black);
+    }
+    .navbar-nav .dropdown-menu {
+        background-color: var(--beige);
+        font-style: italic;
+    }
+    h3{
+        font-size: 1.5rem;  
+    }
+    p{
+        width: 90%;
+        padding: 5px;
+    }
+    /* NOSOTROS*/
+    .nosotros .contenedorImg {
+        width: 90%;
+    }
+    /* CAROUSEL*/
+    #carouselExampleDark {
+        width: 100%;
+    }
+
+    .card-group {
+        width: 93%;
+    }
+    .card-group .card2 p {
+        text-align: -webkit-auto;
+        width: 100%;
+    }
+    .divResponsiveCards {
+        margin: auto;
+        width: 100%;
+        height: 25%;
+    }
 }
