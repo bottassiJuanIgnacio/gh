@@ -285,6 +285,17 @@ nav .container-fluid .divResponsiveNav{
     .card2{
         margin: 30px auto 20px;
     }
+    /*List*/
+    .list{
+        width: 100%;
+        margin: 30px auto 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+    }
+    .list .divList {
+        width: 80%;
+    }
 }
 
 /* MEDIA TABLETS*/
