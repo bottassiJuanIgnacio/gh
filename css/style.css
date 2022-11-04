@@ -6,7 +6,27 @@
     --black : #0D0D0D;
     --blue : #002B5B;
 }
-
+::-webkit-scrollbar {
+    width: 12px;
+    height: 20px;
+    background-position: top; }
+  
+  ::-webkit-scrollbar-button {
+    width: 0px;
+    height: 0px; }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #002B5B;
+    border-radius: 6px; }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #f7e4ca; }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: #595959; }
+  
+  ::-webkit-scrollbar-corner {
+    background: transparent; }
 body{
     margin: 0;
     padding: 0;
@@ -75,7 +95,6 @@ header{
     display: inline-block;
     text-decoration: none;
     color: var(--black);
-    margin: 10px;
 }
 #link:before, #link:after{
     content: '';
@@ -100,7 +119,7 @@ header{
 }
 .navBoots{
     background-color: #f7e4ca;
-    height: 10vh;
+    height: 13vh;
 }
 nav .container-fluid .divResponsiveNav{
     width: 80px;
@@ -198,6 +217,22 @@ nav .container-fluid .divResponsiveNav{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
+}
+/*List*/
+.list{
+    width: 68%;
+    margin: 30px auto 30px;
+    display: flex;
+    justify-content:space-between;
+}
+.list .divList{
+    width: 45%;
+    background-color: var(--beige);
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+}
+.list .divList ul li{
+    background-color: var(--beige);
+    font-family: 'Roboto Slab', serif;
 }
 /* TIPOS DE SEGUROS*/
 
